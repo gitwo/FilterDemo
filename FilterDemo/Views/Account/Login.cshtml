@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "登录页";
+}
+
+@using (Html.BeginForm("LogIn", "Account"))
+{
+    <div>
+        <p>
+            <label>用户名</label><input type="text" name="username" /><br />
+            <label>密&nbsp;&nbsp;&nbsp;&nbsp;码</label><input type="text" name="password" /><br />
+            <label>记住我</label><input type="checkbox" value="true" name="rememberme" />
+            <input type="hidden" value="false" name="rememberme" /><br />
+            <input type="submit" value="登录" />
+        </p>
+    </div>   
+}
+
+
+
+
+
+
+
+
+
+@*$("input[type=checkbox]").change(function () {
+        if ($(this).prop("checked")) {
+            $(this).val(true);
+        } else {
+            $(this).val(false);
+        }
+    });*@
+
+@*@Html.CheckBoxFor(x => x.Rememberme)*@
+@*<input id="RememberMe" name="RememberMe" type="checkbox" value="true" @(Model.RememberMe ? "checked=\"checked\"" : "") />*@
+
